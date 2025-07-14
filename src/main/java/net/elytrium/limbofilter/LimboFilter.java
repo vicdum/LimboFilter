@@ -299,8 +299,7 @@ public class LimboFilter {
             new PacketMapping(0x16, ProtocolVersion.MINECRAFT_1_20_5, false),
             new PacketMapping(0x18, ProtocolVersion.MINECRAFT_1_21_2, false),
             new PacketMapping(0x19, ProtocolVersion.MINECRAFT_1_21_6, false),
-            // Değişiklik: 1.21.7 için paket haritası eklendi. ID'nin (0x19) aynı kaldığı varsayıldı.
-            // Velocity API'nizde MINECRAFT_1_21_7 sabitinin bulunması gerekir.
+            // 1.21.7 support added
             new PacketMapping(0x19, ProtocolVersion.MINECRAFT_1_21_7, false)
         })
         .registerPacket(PacketDirection.CLIENTBOUND, SetEntityMetadata.class, null, new PacketMapping[]{
@@ -320,8 +319,7 @@ public class LimboFilter {
             new PacketMapping(0x58, ProtocolVersion.MINECRAFT_1_20_5, true),
             new PacketMapping(0x5D, ProtocolVersion.MINECRAFT_1_21_2, true),
             new PacketMapping(0x5C, ProtocolVersion.MINECRAFT_1_21_5, true),
-            // Değişiklik: 1.21.7 için paket haritası eklendi. ID'nin (0x5C) aynı kaldığı varsayıldı.
-            // Velocity API'nizde MINECRAFT_1_21_7 sabitinin bulunması gerekir.
+            // 1.21.7 support added
             new PacketMapping(0x5C, ProtocolVersion.MINECRAFT_1_21_7, true)
         })
         .registerPacket(PacketDirection.CLIENTBOUND, SpawnEntity.class, null, new PacketMapping[]{
