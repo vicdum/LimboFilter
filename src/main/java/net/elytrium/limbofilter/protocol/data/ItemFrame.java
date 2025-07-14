@@ -49,7 +49,8 @@ public class ItemFrame {
       return 60;
     } else if (protocolVersion.compareTo(ProtocolVersion.MINECRAFT_1_21_2) <= 0) {
       return 71;
-    } else if (protocolVersion.compareTo(ProtocolVersion.MINECRAFT_1_21_5) <= 0) {
+    } else if (protocolVersion.compareTo(ProtocolVersion.MINECRAFT_1_21_7) <= 0) {
+      // 1.21.7 desteği eklendi
       return 70;
     } else {
       return 71;
@@ -67,7 +68,8 @@ public class ItemFrame {
       return 6;
     } else if (protocolVersion.compareTo(ProtocolVersion.MINECRAFT_1_16_4) <= 0) {
       return 7;
-    } else if (protocolVersion.compareTo(ProtocolVersion.MINECRAFT_1_21_5) <= 0) {
+    } else if (protocolVersion.compareTo(ProtocolVersion.MINECRAFT_1_21_7) <= 0) {
+      // 1.21.7 desteği eklendi
       return 8;
     } else {
       return 9;
